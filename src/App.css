@@ -1,0 +1,16 @@
+body {
+  background: url(./img/Main.png) no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -khtml-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+}

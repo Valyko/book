@@ -1,0 +1,110 @@
+.demoPage {
+    cursor: pointer;
+    z-index: 100;
+    height: 100%;
+    background-repeat: no-repeat;
+    background: url(../../img/Page.png);
+    background-size: 100%;
+    &.landscape {
+        &:nth-child(2n) {
+            .page {
+                &:before {
+                    display: block;
+                    position: absolute;
+                    content: '';
+                    width: 104%;
+                    height: 112%;
+                    left: -4%;
+                    top: -5%;
+                    background-image: url(../../img/openBook.png);
+                    background-repeat: no-repeat;
+                    background-position: left center;
+                    background-size: cover;
+                    z-index: -1;
+                    @media (max-width: 650px) {
+                        background: none;
+                    }
+                }
+            }
+        }
+        &:nth-child(2n + 1) {
+        .page {
+            &:before {
+                display: block;
+                position: absolute;
+                content: '';
+                width: 104%;
+                height: 112%;
+                right: -4%;
+                top: -5%;
+                background-image: url(../../img/openBook.png);
+                background-repeat: no-repeat;
+                background-position: right center;
+                background-size: cover;
+                z-index: -1;
+                @media (max-width: 650px) {
+                    background: none;
+                }
+            }
+        }
+    }
+}
+}
+.page {
+    height: 100%;
+    color: #070703;
+    &.first {
+        background: url(../../img/firstPage.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-left: -3px;
+        background-size: 100%;
+        margin: -30px -17px;
+        padding: 34px 20px;
+    }
+
+    .content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 45px;
+        img:last-of-type {
+            margin-top: auto;
+        }
+        @media (max-width: 500px) {
+            padding: 10px 40px;
+            
+        }
+    }
+    img {
+        &.main {
+            max-width: 400px;
+            max-height: 330px;
+            width: 100%;
+        }
+        &.number {
+            position: absolute;
+            bottom: 0;
+            @media (max-width: 666px) {
+                bottom: 5%;
+            }
+            @media (max-width: 450px) {
+                bottom: 0.5%;
+            }
+        }
+    }
+    h2 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-top: 0;
+        font-weight: 400;
+        margin-bottom: 10px;
+        align-content: center;
+    }
+    p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+

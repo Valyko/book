@@ -1,0 +1,59 @@
+.book {
+    z-index: 10;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.block_btn {
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    div {
+        cursor: pointer;
+        margin: 0 10px;
+        height: 48px;
+        width: 48px;
+        background: url("../../img/Arrow.png");
+        background-position: center;
+        background-size: 100%;
+        &.right {
+            transform: scale(-1, 1);
+            &:hover {
+                transform: none;
+                background: url("../../img/ArrowHover.png");
+                background-position: center;
+                background-size: 100%;
+            }
+        }
+        &:hover {
+            transform: scale(-1, 1);
+            background: url("../../img/ArrowHover.png");
+            background-position: center;
+            background-size: 100%;
+        }
+    }
+}
+.volume {
+    background: url("../../img/volume.png");
+    height: 24px;
+    width: 24px;
+    background-size: 100%;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    &.on {
+        height: 34px;
+        width: 34px;
+    }
+}

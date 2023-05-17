@@ -9,7 +9,7 @@ function App() {
   
   useEffect(() => {
     dispatch(fetchPages())
-  })
+  }, [dispatch])
 
   return <Book/>
 }

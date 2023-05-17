@@ -73,15 +73,19 @@
             margin-top: auto;
         }
         @media (max-width: 500px) {
-            padding: 10px 40px;
+            padding: 10px;
             
         }
     }
     img {
+        object-fit: cover;
         &.main {
             max-width: 400px;
             max-height: 330px;
             width: 100%;
+            @media (max-width: 500px) {
+                height: 50%;
+            }
         }
         &.number {
             position: absolute;
